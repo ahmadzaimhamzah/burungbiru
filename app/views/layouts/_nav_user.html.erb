@@ -30,9 +30,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Avatar <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li>
-              <%= link_to '#', :href => '/user/' + current_user.username do %>
+              <a href="/user/<%= current_user.username %>">
                 <h5><b>@<%= current_user.username %></b><br><small>View profile</small></h5>
-              <% end %>
+              </a>
             </li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Lists</a></li>
