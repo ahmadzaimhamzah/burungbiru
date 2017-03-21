@@ -27,6 +27,15 @@ body {
   left: 50%;
 }
 
+.navbar-tweet {
+  float: right;
+  margin-right: 15px;
+}
+
+.navbar-toggle.navbar-left {
+  float: left;
+  margin-left: 15px;
+}
 
 div.authform {
   padding-top: 40px;

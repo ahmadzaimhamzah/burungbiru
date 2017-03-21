@@ -1,2 +1,63 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<% if !user_signed_in? %>
+    <style>
+        body {
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/bg.jpeg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .container-index {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        h1 {
+            color: white;
+            font-weight: 800;
+        }
+        .text {
+            color: white;
+            font-weight: 600;
+            font-size: 150%;
+        }
+        .text-footer {
+            color: white;
+            font-size: 70%;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .log-in {
+            float: right;
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+        }
+        .sign-up {
+            float: right;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+    
+    <div class="container-index row">
+        <div class="col-md-7">
+            <h1>Ini bukan Twitter.</h1>
+            <p class="text">Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.</p>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="log-in panel">
+                Log in
+            </div>
+            <div class="sign-up panel">
+                Sign up
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <p class="text-footer">About Help Center Blog Status Jobs Terms Privacy policy Cookies Ads info Brand Advertise Businesses Developers Directory © 2017 Burung Biru</p>
+        </div>
+    </div>
+<% else %>
+    Signed in
+<% end %>

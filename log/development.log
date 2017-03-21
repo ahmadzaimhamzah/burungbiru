@@ -7008,3 +7008,957 @@ Processing by PagesController#home as HTML
   Rendered layouts/_nav_user.html.erb (0.3ms)
   Rendered layouts/_nav.html.erb (2.2ms)
 Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:40:00 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:40:17 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+Completed 200 OK in 174ms (Views: 172.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:40:19 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.6ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 175.143.202.137 at 2017-03-21 06:42:36 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l1Pzs5T6YOJ4tPXc7ZlwuzSCInB/VKirKzX7RJ2Ogt2BydBpX5YyTBv3HVjG+XB53n9m7KIFUUhHKsP+68yWkw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:42:38 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+Completed 200 OK in 52ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 175.143.202.137 at 2017-03-21 06:42:48 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 175.143.202.137 at 2017-03-21 06:42:50 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1MAaKfLuh3p4K0vCvNAeCpTPqGqkVqg6PWmnC7VXoDxmKL3k557DosL8iV5aBA/fL1VDeddpTM+/W4DRJOuCPA==", "user"=>{"email"=>"ahmadzaimhamzah@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ahmadzaimhamzah@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-21 06:37:43.605897"], ["current_sign_in_at", "2017-03-21 06:42:50.329920"], ["sign_in_count", 16], ["updated_at", "2017-03-21 06:42:50.331255"], ["id", 1]]
+  [1m[35m (11.5ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 155ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:42:50 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:42:53 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 175.143.202.137 at 2017-03-21 06:42:57 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vCPUNC6efb0ffKX5dH1MptOEzcW2xmkIJdvgJ6Ku9GIXaFx/M10WyM5pwbOlSS7KUFeR9LZae2pZgyQoTE2DbA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:42:58 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:44:48 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.8ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:46:03 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (4.1ms)
+  Rendered layouts/_nav.html.erb (5.0ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    30:           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language: English <span class="caret"></span></a>
+    31:           <ul class="dropdown-menu">
+    32:             <li>
+    33:               <a href="/user/<%= current_user.username %>">
+    34:                 <h5><b>@<%= current_user.username %></b><br><small>View profile</small></h5>
+    35:               </a>
+    36:             </li>
+  app/views/layouts/_nav_guest.html.erb:33:in `_app_views_layouts__nav_guest_html_erb___2333818076372407433_70021274416400'
+  app/views/layouts/_nav.html.erb:2:in `_app_views_layouts__nav_html_erb___1805883110870612876_70021272183580'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___2590332002160103847_16966980'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.4ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:46:50 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (1.1ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:50:03 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC[0m
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav_guest.html.erb (0.8ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:50:27 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.8ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:50:31 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:50:33 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:50:34 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:51:20 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 175.143.202.137 at 2017-03-21 06:52:11 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 175.143.202.137 at 2017-03-21 06:52:13 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t9SjB2oUfrGLB+7M5M9uak15GtZpIHtHI2+Hd/bl3o9vVPoRx0qnaTuPtgZqmRrYIca/srpsW9cX44WCVXKFlA==", "user"=>{"email"=>"ahmadzaimhamzah@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ahmadzaimhamzah@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-21 06:42:50.329920"], ["current_sign_in_at", "2017-03-21 06:52:13.164467"], ["sign_in_count", 17], ["updated_at", "2017-03-21 06:52:13.213998"], ["id", 1]]
+  [1m[35m (12.1ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 218ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 06:52:13 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:52:19 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:54:23 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:56:31 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:58:53 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (2.9ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:58:56 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:58:59 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 06:59:20 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (2.9ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:00:06 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.3ms)
+  Rendered layouts/_nav.html.erb (3.4ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:02:42 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.0ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (4.1ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:03:04 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (2.8ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:03:23 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.1ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.1ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:03:45 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (3.1ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:04:02 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.3ms)
+  Rendered layouts/_nav.html.erb (4.5ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:06:45 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+Completed 200 OK in 1851ms (Views: 1849.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-6ab5fcfb75cd6159e84b8a844798c2041d3766ddc58a398e46a85aeff15bc928.css?body=1" for 175.143.202.137 at 2017-03-21 07:06:48 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:07:50 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (2.9ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:08:23 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.7ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:08:34 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (3.2ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:08:37 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:08:59 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (2.4ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (3.2ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:09:09 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.1ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+Completed 200 OK in 92ms (Views: 89.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:09:25 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.1ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.3ms)
+  Rendered layouts/_nav.html.erb (4.3ms)
+Completed 200 OK in 89ms (Views: 86.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:10:38 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.1ms)
+  Rendered layouts/_nav.html.erb (3.3ms)
+Completed 200 OK in 2075ms (Views: 2073.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-793aee8ac7e9b695b44ce5c039f212d07929ef5122c5434910341a410ae8d284.css?body=1" for 175.143.202.137 at 2017-03-21 07:10:41 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:10:54 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.1ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:10:55 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:14:29 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.5ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (4.1ms)
+Completed 200 OK in 2977ms (Views: 2974.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-55e843ca86f8774479bd66a202a9ab5380a4399b8be30c956d6d55aa35bfe669.css?body=1" for 175.143.202.137 at 2017-03-21 07:14:33 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:15:26 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (0.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.0ms)
+  Rendered layouts/_nav.html.erb (3.1ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:16:19 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.4ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.7ms)
+  Rendered layouts/_nav.html.erb (4.0ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:17:34 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.0ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (3.6ms)
+Completed 200 OK in 2149ms (Views: 2147.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-d22f8aebb0d1fdeb7afd0ac60f9168830bce2d76572e45b39882653296c8c8fa.css?body=1" for 175.143.202.137 at 2017-03-21 07:17:38 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:18:23 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+Completed 200 OK in 2330ms (Views: 2328.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-bbb5acf248f9bd690bd210fd2e2043e7ebcb2a2b593fbbb20792ba327a62a9a1.css?body=1" for 175.143.202.137 at 2017-03-21 07:18:26 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/users/sign_out" for 175.143.202.137 at 2017-03-21 07:27:19 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AafjpOCSxHn2NMdtGmJPJu8hcSAeqZD19N9QU9u8Ty3AJqbNqi2VPK3VR3v2bO6xkVPZIvjaTrM/HALAO6a7tQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:27:19 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:30:13 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:30:56 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:31:32 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:32:48 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:33:04 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:34:06 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:34:30 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:35:34 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:36:37 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:37:06 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:38:39 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:38:54 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:39:29 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:39:43 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:40:34 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:40:37 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:40:39 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:40:42 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:42:31 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:47:24 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:47:32 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:48:48 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:50:54 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:51:22 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:52:24 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:52:31 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:54:53 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 175.143.202.137 at 2017-03-21 07:54:59 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 175.143.202.137 at 2017-03-21 07:55:02 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"flwAu0on8a5lzWM+TNtdJs71MAgK7dezimvMvruUM8fschMjAiYtm6dFx1UiNeuPodGimYbq1ZAJmY1UbLhznA==", "user"=>{"email"=>"ahmadzaimhamzah@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ahmadzaimhamzah@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-21 06:52:13.164467"], ["current_sign_in_at", "2017-03-21 07:55:02.292375"], ["sign_in_count", 18], ["updated_at", "2017-03-21 07:55:02.293621"], ["id", 1]]
+  [1m[35m (12.1ms)[0m  commit transaction
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/
+Completed 302 Found in 161ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/" for 175.143.202.137 at 2017-03-21 07:55:02 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav_user.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:55:07 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.9ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 175.143.202.137 at 2017-03-21 07:55:16 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BI6Z78A2+Fik/V2U8iEzi0FvY0NN/6LiZQhLyL0ZwKNTH9/lhE/ea3GJnaw2pn7LKBl06p6n15yPMxFSZspYeQ==", "post"=>{"content"=>"Dayuuummnn"}, "button"=>""}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "posts" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "Dayuuummnn"], ["user_id", 1], ["created_at", "2017-03-21 07:55:16.498108"], ["updated_at", "2017-03-21 07:55:16.498108"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://burungbiru-ahmadzaimhamzah.c9users.io/home
+Completed 302 Found in 19ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/home" for 175.143.202.137 at 2017-03-21 07:55:16 +0000
+Cannot render console from 175.143.202.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered components/_post_form.html.erb (1.1ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.5ms)
