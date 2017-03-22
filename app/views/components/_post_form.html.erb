@@ -1,12 +1,24 @@
 <%= form_for(@newPost) do |f| %>
+<div class="col-xs-1">
+  <img src="/avatar.jpg" alt="Profile picture" width="30px" height="30px" class="img-rounded" style="vertical-align: top;">
+</div>
+<div class="col-xs-11">
+  <%= f.text_area :content, :class => "form-control", :style => "", :placeholder => "Apa yang menarik hari ini?", autofocus: true %>
+</div>
+<div class="col-xs-11 col-xs-offset-1">
+  <p class="tweet-links">
+    <span class="glyphicon glyphicon-camera" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Add photos or videos"></span>
+    <span class="glyphicon glyphicon-picture" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Add a GIF"></span>
+    <span class="glyphicon glyphicon-list" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Add poll"></span>
+    <span class="glyphicon glyphicon-map-marker" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Add location"></span>
+    <span class="tweet-button">
+      <%= f.button :submit, :class => "btn btn-default" do %>
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Tweet
+      <% end %>
+    </span>
+  </p>
+</div>
 
-  <div class="form-group">
-    <%= f.text_area :content, :class => "form-control", :placeholder => "Apa yang menarik hari ini?", autofocus: true %>
-  </div>
+
   
-  <div class="actions form-group">
-    <%= f.button :submit, :class => "btn btn-primary btn-block" do %>
-      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Tweet
-    <% end %>
-  </div>
 <% end %>

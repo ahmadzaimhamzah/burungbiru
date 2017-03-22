@@ -24,7 +24,7 @@ body {
 
 .navbar-brand {
   position: absolute;
-  left: 50%;
+  left: calc(50% - 9px);
 }
 
 .navbar-tweet {
@@ -86,4 +86,48 @@ div.authform {
   border-top-right-radius: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+.post-owner {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.post-username {
+  
+}
+.post-timestamp {
+  
+}
+.post-links, .tweet-links {
+  margin-bottom: 0;
+}
+.tweet-links {
+  margin-top: 10px;
+}
+.post-links > span, .tweet-links > span {
+  margin-right: 30px;
+  opacity: 0.7;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.post-links span:hover, .tweet-links span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.post-links span.glyphicon-share-alt:hover {
+  color: blue;
+}
+.post-links span.glyphicon-retweet:hover {
+  color: green;
+}
+.post-links span.glyphicon-heart:hover {
+  color: red;
+}
+.post-links span.post-conversation, .tweet-links span.tweet-button {
+  margin-right: 0;
+  font-size: 100%;
+  float: right;
 }
